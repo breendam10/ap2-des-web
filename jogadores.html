@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="escudo.png" type="image/x-icon">
+  <title>Atletas Botafogo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #555;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Atletas Botafogo</h1>
+  </header>
+
+  <nav>
+    <a href="#" onclick="navegar('masculino')">Masculino</a>
+    <a href="#" onclick="navegar('feminino')">Feminino</a>
+    <a href="#" onclick="navegar('elenco-completo')">Elenco Completo</a>
+    <a href="#" onclick="sair()">Sair</a>
+  </nav>
+
+  <main>
+    <!-- Conteúdo da página será carregado aqui -->
+  </main>
+
+  <script>
+    function sair() {
+      alert("Você saiu!"); // Adicione a lógica de logout aqui
+    }
+
+    function navegar(opcao) {
+      // Adicione a lógica de navegação com base na opção selecionada
+      alert("Navegando para: " + opcao);
+    }
+  </script>
+
+</body>
+</html>

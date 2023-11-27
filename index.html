@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="escudo.png" type="image/x-icon">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    #passwordInput {
+      margin-bottom: 10px;
+    }
+    #senhaStatus {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Atletas do Botafogo 2023-2</h1>
+  <p>Criado com objetivos exclusivamente didáticos para a disciplina Desenvolvimento Web do Ibmec Rio.</p>
+
+  <label for="passwordInput">Informe a senha:</label>
+  <input type="password" id="passwordInput" />
+  <button onclick="verificarSenha()">Entrar</button>
+  <p id="senhaStatus"></p>
+
+  <script>
+    function verificarSenha() {
+      const senhaInserida = document.getElementById('passwordInput').value;
+      const senhaCorreta = 'SENHA'; // Substitua 'SENHA' pela senha correta
+
+      if (senhaInserida === senhaCorreta) {
+        window.location.href = 'jogadores.html'; // Substitua 'pagina-secreta.html' pela página desejada após o login
+      } else {
+        document.getElementById('senhaStatus').innerText = 'Senha incorreta. Tente novamente.';
+      }
+    }
+  </script>
+
+</body>
+</html>
+ 
